@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+}
+  
+h1 {
+    color: #fff;
+    padding: 10px;
+  }
+.main{
+    padding-top: 2%;
+    background-color: #E4E9FD;
+    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+    min-height: 740px;
+    font-family: 'helvetica neue';
+}
+.par{
+    width: 40%;
+    height: 150px;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+}
+.inside{
+    padding: 0 100px 0 70px;
+}
+.entertask{
+    background-color: #F0F0F0;
+    justify-content: space-between;
+    border-radius: 20px;
+    height: 45px;
+}
+input{
+    border: none;
+    outline: none;
+    background-color: #F0F0F0;
+    padding-top: 10px;
+    padding-left: 7px;
+    border-radius: 10px;
+}
+.sub{
+    background-color: #A683E3;
+    border: none;
+    border-radius: 20px;
+    width: 10%;
+    height: 40px;
+    padding-bottom: 10;
+}
+.taskadd{
+    padding: 0 30% 0 30%;
+    margin: auto;
+    
+}
+.inputhold{
+    background-color: white;
+    display: flex;
+    border-radius: 20px;
+    height: 50px;
+    margin-bottom: 3%;
+}
+.check{
+    display: inline;
+    margin: 15px 1% 0 3%;
+    width: 20px;
+    height: 20px;
+}
+.pa{
+    display: inline;
+    margin-top:13px;
+    margin-bottom: 5px;
+    width: 520px;
+    overflow: hidden;
+    font-family: 'Alkatra', cursive;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.sym{
+    display: inline;
+    margin-top:10px;
+    margin-bottom: 5px;
+    background-color: #F0F0F0;
+    margin-left: 2%;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    padding-left: 1.6%;
+    cursor: pointer;
+    z-index: 1;
+}
+.checked{
+    text-decoration: line-through;
+    color:#939697;
+}
+
+.exre{
+    width: 10%;
+    height:120px;
+    border:1px solid red;
+    border-radius:10px;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+.exparg{
+    font-size: 30px;
+    margin-top: 20px;
+    color: red;
+}
+.income{
+    width: 10%;
+    height:120px;
+    border:1px solid green;
+    border-radius:10px;
+    margin-right:20px;
+    margin-bottom:20px;
+}
+.inparg{
+    font-size: 30px;
+    margin-top: 20px;
+    color: green;
+}

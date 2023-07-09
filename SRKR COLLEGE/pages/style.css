@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header starting */
+header{
+    height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('../assests/images/bg.jpg');
+        background-repeat: no-repeat ;
+        background-size: cover;
+}
+/* header ending */
+
+/* nav-bar starting  */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 1  ;
+    color: white; /* Set initial text color to white */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add color transition */
+}
+
+.navbar.scrolled {
+    background-color: #fff;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition:1s ease;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar-list li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.navbar-list li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: inherit; 
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    display: block;
+    text-align: center;
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    color: #333;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #ddd;
+}
+
+
+/* nav-bar ending */
+/* banner starting */
+/* .banner {
+    
+    width: 246px;
+    overflow: hidden;
+}
+
+.banner .text{
+    position: relative;
+    color: rgb(76, 76, 216);
+    font-size:30px;
+    font-weight: 600;
+}
+
+.banner .text.first-text{
+    color: #fff;
+}
+
+.text.second-text::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width:100px;
+    height:100vh;
+    background: color #4070f4;;
+border-left: 2px solid #4070F4;
+animation: animate 10s steps(20) infinite;
+
+}
+@keyframes animate {
+    40%,60%{
+        left: calc(100% + 4px);
+    }
+    
+    100%{
+        left:0;
+    }
+} */
+
+
+.text-box{
+	font-size: 80px;
+	font-weight: 900;
+	text-align: center;
+	width:100%;
+    padding: 100px;
+}
+.fixed-text{
+	display: inline-block;
+    color: #fff;
+}
+.animate-text{
+	display: inline-block;
+	vertical-align: top;
+	height: 90px;
+	overflow: hidden;
+
+}
+.animate-text div{
+	animation:9s wordChange;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(1);
+}
+.animate-text span{
+	position: relative;
+	color: #02095a;
+	display: block;
+	text-align: left;
+    top: 30px;
+    
+
+}
+.animate-text span:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	border-left: 5px solid #02095a;
+	height: 100px;
+	animation:3s textType;
+	animation-iteration-count: infinite;
+	animation-timing-function: steps(10);
+	animation-fill-mode: backwards;
+	right: -2px;
+    z-index: 0;
+	background-color:#fff ;
+	overflow: hidden;
+}
+
+@keyframes textType{
+	0%{
+		left: 0;
+	}
+	50%{
+		left: 100%;
+	}
+	100%{
+		left: 0;
+	}
+}
+@keyframes wordChange{
+	0%{
+		margin-top: 0;
+	}
+	33.333%{
+		margin-top: -113px;
+	}
+	66.666%{
+		margin-top: -226px;
+	}
+	100%{
+		margin-top: 0;
+	}
+}
+
+
+
+/* Flash News */
+
+
+  
+  .shownews {
+    font-weight:700;
+    color:#fff;
+    width:600px;
+    margin:50px auto;
+    text-transform: uppercase;
+    font-family: open sans;
+    display:grid;
+    grid-template-columns: max-content auto;
+    grid-column-gap:3px;
+    
+  }
+  
+  .shownews .title { 
+    background:#F23E16;
+    display:inline-block;
+    padding:8px 16px;
+    clip-path: polygon(0px 0px, 100% 0, 100% 100%, 0px 100%);
+    animation: mask 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease;
+  }
+  
+   .shownews #news { 
+    background: #037F8C;
+    display:inline-block;
+    padding:8px 16px;
+     
+    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+    animation: mask 2s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+  }
+  
+  .shownews #news a{
+    color:yellow; 
+    text-decoration:none;
+  } 
+  
+  @keyframes mask {
+    0% {
+      clip-path: polygon(0px 0px, 0% 0, 0% 100%, 0px 100%);
+    }
+    100% {
+      clip-path: polygon(0px 0px, 100% 0, 100% 100%, 0px 100%);
+    }
+  }
+
+/* .popup-container {
+    display: flex;
+margin-left: 500px;
+    font-size: 20px;
+    
+  }
+  
+  .popup-container .popup {
+    animation: pop-up 0.8s 2 ease-in both;
+    opacity: 0;
+    margin-left: 9px;
+    transform: scale(0.3);
+    margin-bottom: 20px;
+  }
+  
+  @keyframes pop-up {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  } */
+
+.matter{
+    display: flex;
+gap: 40px;
+margin: 14px;
+/* width: 90vw; */
+padding: 70px;
+}
+.matter i{
+    font-size: 40px;
+    padding: 5px;
+    color: maroon;
+}    
+
+.matter h2{
+    font-size: 18px;
+}
+
+/* HOD */
+
+.hod{
+    padding: 100px;
+}
+
+.hod .hod-pic{
+ height:50vh;
+ width: 500px;
+border-radius: 12px;
+ padding: 1px;
+ margin: 25px;
+ box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ transition: 1s ease    ;
+ 
+}
+
+
+.hod p{
+    position: relative;
+    top: -317px;
+    left:50vw;
+    width: 400px;
+/* text-align: right; */
+}
+
+/* SECTION */
+.container{
+    display: flex;
+    margin-left: 100px;
+margin-top:-200px;
+    gap:100px;
+}
+.counter-numbers {
+    font-size: 32px; /* Adjust the font size as needed */
+    color:rgb(236, 40, 40);
+
+  }
+
+  .container h3{
+    font-size:20px;
+  }
+
+  /* Footer */
+footer{
+    background-color:#13294b;
+    color:white;
+    height: 60vh;
+    
+}
+
+footer .about-section{
+    width:30vw;
+margin-left:30px;
+padding-top:30px;
+}
+footer .about-section h3{
+    font-size:30px;
+
+}
+
+footer .icons i {
+    padding:10px;
+    color:#fff;
+    border-radius:90px;
+    
+}
+
+
+footer .icons .fa-google:hover{
+    color:red;
+}
+
+footer .icons .fa-twitter:hover{
+    color:rgb(161, 161, 251);
+}
+footer .icons .fa-facebook-f:hover{
+    color:blue;
+}
+footer .icons .fa-instagram:hover{
+    color:rgb(235, 88, 113);
+
+}
+
+footer .icons .fa-linkedin-in:hover{
+    color:blue;
+}
+
+footer .icons .fa-pinterest:hover{
+    color:red;
+}
+
+/* media query */
